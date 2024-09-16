@@ -1,0 +1,480 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer src="js/app.min.js"></script>
+    <title>Главная</title>
+</head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="container">
+        <main class="header__row">
+            <a href="/" class="header__logo">
+                <p>
+                    Займ Клик
+                </p>
+                <p>Деньги быстро и без хлопот</p>
+            </a>
+            <nav class="header__menu">
+                <a href="#" data-scroll="about">О нас</a>
+                <a href="#" data-scroll="reviews">Отзывы</a>
+                <a href="#" data-scroll="faq">Вопросы и ответы</a>
+                <a href="#" data-scroll="contacts">Контакты</a>
+                <div class="header__btns">
+                    <a href="#" class="btn btn-red btn__bordered">
+                        <span>Отписка</span>
+                    </a>
+                </div>
+            </nav>
+            <div class="header__btns">
+                <a href="#" class="btn btn-red btn__fill btn-pending">
+                    <span>Вход</span>
+                </a>
+                <a href="#" class="btn btn-red btn__bordered">
+                    <span>Отписка</span>
+                </a>
+            </div>
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </main>
+    </div>
+</header>
+
+            <main class="content">
+                <section class="intro">
+                    <div class="container">
+                        <div class="intro__row">
+                            <h1>
+                                Нужны средства срочно?
+                                Мы здесь, чтобы помочь!
+                            </h1>
+                            <h2>
+                                С
+                                <b>Займ Клик</b>
+                                вы получаете доступ к лучшим займам на рынке всего за несколько минут
+                            </h2>
+                            <div class="intro__decoration decoration">
+                                <h2>Оформление заявки</h2>
+                                <div class="decoration__row">
+                                    <div class="decoration__ranges">
+                                        <div data-type="amount" class="custom-range">
+                                            <header class="custom-range__header">
+                                                <p>Сумма</p>
+                                                <p class="custom-range__value"></p>
+                                            </header>
+                                            <input
+                                                type="range"
+                                                step="1000"
+                                                min="10000"
+                                                max="100000"
+                                                value="20000"
+                                            >
+                                        </div>
+                                        <div data-type="term" class="custom-range">
+                                            <header class="custom-range__header">
+                                                <p>Срок</p>
+                                                <p class="custom-range__value"></p>
+                                            </header>
+                                            <input
+                                                type="range"
+                                                step="1"
+                                                min="1"
+                                                max="24"
+                                                value="2"
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="decoration__privacy">
+                                        <a href="#" class="btn btn-red btn__fill btn-create">
+                                            <span>Оформить заявку</span>
+                                        </a>
+                                        <label class="checkbox">
+                                            <input type="checkbox" class="custom-checkbox">
+                                            <p>Я согласен с договором публичной оферты и даю согласие на обработку персональных данных, получение рекламных материалов, ознакомлен с «тарифными планами».</p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <p class="decoration__copy">
+                                    Услуга обработки заявки платная. Стоимость услуг составляет четыреста девяносто девять рублей в неделю.
+                                </p>
+                            </d>
+                        </div>
+                    </div>
+                    <div class="intro__image">
+                        <img src="img/intro/bg.png" alt="">
+                    </div>
+                </section>
+                <article class="conditions article">
+                    <div class="container">
+                        <header class="block-header">
+                            <h2>Что мы предлагаем</h2>
+                        </header>
+                        <main class="conditions__row">
+                            <div class="conditions__item">
+                                <img src="img/svgicons/conditions/1.svg" alt="">
+                                <div class="conditions__info">
+                                    <h3>Прозрачные условия</h3>
+                                    <p>Все условия займа ясны и прозрачны – вы знаете точно, что и когда нужно будет выплатить</p>
+                                </div>
+                            </div>
+                            <div class="conditions__item">
+                                <img src="img/svgicons/conditions/2.svg" alt="">
+                                <div class="conditions__info">
+                                    <h3>Быстрота обработки заявки</h3>
+                                    <p>Получите одобрение вашего займа в течение нескольких минут</p>
+                                </div>
+                            </div>
+                            <div class="conditions__item">
+                                <img src="img/svgicons/conditions/3.svg" alt="">
+                                <div class="conditions__info">
+                                    <h3>Индивидуальный подход</h3>
+                                    <p>Мы предлагаем индивидуальные условия займа, адаптированные под ваши личные финансовые потребности и возможности</p>
+                                </div>
+                            </div>
+                            <div class="conditions__item">
+                                <img src="img/svgicons/conditions/4.svg" alt="">
+                                <div class="conditions__info">
+                                    <h3>Прозрачные условия</h3>
+                                    <p>
+                                        Забудьте о сложных банковских процедурах. С
+                                        <b>ЗаймКлик</b>
+                                        вам нужно всего лишь заполнить короткую форму
+                                    </p>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </article>
+                <article class="steps article">
+                    <div class="container">
+                        <main class="steps__row">
+                            <div class="steps__step">
+                                <h2>Заполните простую анкету</h2>
+                                <p>
+                                    Займет не более
+                                    <b>двух минут.</b>
+                                    Нужен только паспорт
+                                </p>
+                            </div>
+                            <div class="steps__step">
+                                <h2>Система подберет предложения</h2>
+                                <p>
+                                    Вам нужно будет
+                                    <b>выбрать</b>
+                                    из готового списка
+                                </p>
+                            </div>
+                            <div class="steps__step">
+                                <h2>Получите деньги</h2>
+                                <p>
+                                    Получите деньги через
+                                    <b>10 минут</b>
+                                    на свою карту
+                                </p>
+                            </div>
+                        </main>
+                    </div>
+                </article>
+                <article class="reviews article">
+                    <div class="container">
+                        <header class="block-header">
+                            <h2>Отзывы клиентов</h2>
+                            <p>Реальные истории от тех, кто уже воспользовался ЗаймКлик</p>
+                        </header>
+                        <main class="reviews__row">
+                            <div class="reviews__review">
+                                <header class="reviews__header">
+                                    <div class="reviews__img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="reviews__author">
+                                        <p>Александр</p>
+                                        <p>г. Казань</p>
+                                    </div>
+                                </header>
+                                <main class="reviews__body">
+                                    Ребята, ну это было просто спасение! Срочно нужны были деньги, и в банке куча бумажек и ожидание. Нашел ЗаймКлик, заполнил форму за пару минут, и вуаля — деньги уже у меня на карте. Никаких заморочек, все четко и быстро.
+                                </main>
+                            </div>
+                            <div class="reviews__review">
+                                <header class="reviews__header">
+                                    <div class="reviews__img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="reviews__author">
+                                        <p>Марина</p>
+                                        <p>г. Псков</p>
+                                    </div>
+                                </header>
+                                <main class="reviews__body">
+                                    Всем привет! Хочу поделиться своим опытом Были небольшие финансовые затруднения, нужно было срочно найти деньги. Попробовала ЗаймКлик, не ожидала, что все решится так быстро. Заполнила форму, и через 10 минут уже имела нужную сумму на карте
+                                </main>
+                            </div>
+                            <div class="reviews__review">
+                                <header class="reviews__header">
+                                    <div class="reviews__img">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="reviews__author">
+                                        <p>Валентин</p>
+                                        <p>г. Санкт-Петербург</p>
+                                    </div>
+                                </header>
+                                <main class="reviews__body">
+                                    Честно, был скептичен вначале, но ребята молодцы — все четко, прозрачно, без лишних вопросов и сложностей. Даже не ожидал, что так быстро все получится. Отличный сервис
+                                </main>
+                            </div>
+                        </main>
+                    </div>
+                </article>
+                <article class="faq article">
+                    <div class="container">
+                        <header class="block-header white">
+                            <h2>Вопросы и ответы</h2>
+                        </header>
+                        <main class="faq__row">
+                            <div class="faq__item">
+                                <header class="faq__header">
+                                    <img src="img/svgicons/faq.svg" alt="">
+                                    <h3>Как быстро я могу получить займ?</h3>
+                                </header>
+                                <main class="faq__body">
+                                    Вы можете получить займ за считанные минуты после заполнения онлайн-формы. После одобрения заявки деньги будут перечислены на вашу карту немедленно.
+                                </main>
+                            </div>
+                            <div class="faq__item">
+                                <header class="faq__header">
+                                    <img src="img/svgicons/faq.svg" alt="">
+                                    <h3>Какие документы мне нужны для получения займа?</h3>
+                                </header>
+                                <main class="faq__body">
+                                    Вы можете получить займ за считанные минуты после заполнения онлайн-формы. После одобрения заявки деньги будут перечислены на вашу карту немедленно. Вы можете получить займ за считанные минуты после заполнения онлайн-формы. После одобрения заявки деньги будут перечислены на вашу карту немедленно.
+                                </main>
+                            </div>
+                            <div class="faq__item">
+                                <header class="faq__header">
+                                    <img src="img/svgicons/faq.svg" alt="">
+                                    <h3>Какие условия возврата займа?</h3>
+                                </header>
+                                <main class="faq__body">
+                                    Вы можете получить займ за считанные минуты после заполнения онлайн-формы. После одобрения заявки деньги будут перечислены на вашу карту немедленно.
+                                </main>
+                            </div>
+                            <div class="faq__item big">
+                                <header class="faq__header">
+                                    <img src="img/svgicons/faq.svg" alt="">
+                                    <h3>Могу ли я погасить займ досрочно?</h3>
+                                </header>
+                                <main class="faq__body">
+                                    Вы можете получить займ за считанные минуты после заполнения онлайн-формы. После одобрения заявки деньги будут перечислены на вашу карту немедленно.
+                                </main>
+                            </div>
+                            <div class="faq__item big">
+                                <header class="faq__header">
+                                    <img src="img/svgicons/faq.svg" alt="">
+                                    <h3>Что будет, если я не смогу вовремя погасить займ?</h3>
+                                </header>
+                                <main class="faq__body">
+                                    Вы можете получить займ за считанные минуты после заполнения онлайн-формы.
+                                </main>
+                            </div>
+                        </main>
+                    </div>
+                    <div class="faq__image">
+                        <img src="img/faq/bg.png" alt="">
+                    </div>
+                </article>
+                <article class="seo article">
+                    <div class="container">
+                        <div class="seo__flex">
+                            <div class="seo__block">
+                                <p>Услуги предоставляет ООО Комбинат. Сервис не является финансовым учреждением, кредитором или банком, и не несет ответсвенности за последствия любых заключенных договоров кредитования и условия по ним.</p>
+                                <br>
+                                <p>Займ выдается в российских рублях гражданам Российской Федерации, на банковский счет, на карту или наличными. Минимальная сумма займа: 1 000 рублей. Максимальная сумма займа: 100 000 рублей. Процентная ставка: от 0% годовых до 365% годовых, срок займа от 1 до 365 дней включительно.</p>
+                                <br>
+                                <p>*У пользователей сервиса есть возможность получить займ с минимальной процентной ставкой 0%. Подробности при выборе персонального предложения. Итоговая сумма займа может быть изменена по результатам первичной проверки анкеты. Информация, размещенная на данном сайте, носит исключительно справочный характер и собрана из различных открытых источников информации в соответствии с законодательством РФ. Владелец сайта не несет ответственности за вред чести, достоинству и деловой репутации, за ущерб связанный с упущенной выгодой в результате использования сайта.</p>
+                            </div>
+                            <div class="seo__block small-text">
+                                <h3>Список кредиторов:</h3>
+                                <p>ООО МФК «ВЗАИМНО», ОГРН 1187746654006, ИНН 7708333218, адрес: 101000, г. Москва, ул. Мясницкая, д.35, стр.2, помещение 1, эт. 6, комната 14;</p>
+                                <p>ООО МФК «Экофинанс», ОГРН 1157746230730, ИНН 7715450868, адрес: 127051, г. Москва, ул. Садовая-Самотёчная, д. 24/27, 4 этаж;</p>
+                                <p>ООО МФК «Турбозайм», ОГРН 137746702367, ИНН 7702820127, адрес: 123290, г. Москва, тупик Магистральный 1-й, дом 11, стр. 10;</p>
+                                <p>ООО МФК «ЭкспрессДеньги». ОГРН 1101215004593, ИНН 1215150103, КПП 121501001, адрес: 424038, Республика Марий Эл, г. Йошкар-Ола, б-р Чавайна, д. 12, корп. А;</p>
+                                <h3>Совершая любые действия на сайте, вы даете свое:</h3>
+                                <a href="#">Согласие на обработку персональных данных</a>
+                                <a href="#">Согласие на получение рекламных материалов</a>
+                                <h3>Вы ознакомились и соглашаетесь с:</h3>
+                                <a href="#">Договором публичной оферты</a>
+                                <a href="#">Политикой обработки персональных данных</a>
+                                <p>
+                                    По любым вопросам вы можете связаться со специалистами сервиса по электронной почте:
+                                    <a href="mailto:info@clickzaim.org">info@clickzaim.org</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <main class="footer__row">
+            <a href="/" class="footer__logo">
+                <p>
+                    Займ Клик
+                </p>
+                <p>Деньги быстро и без хлопот</p>
+            </a>
+            <nav class="footer__copy">
+                ©2023 Все права защищены.
+            </nav>
+            <div class="footer__btns">
+                <a href="#" class="btn btn-white btn__fill">
+                    <span>Вход</span>
+                </a>
+                <a href="#" class="btn btn-white btn__bordered">
+                    <span>Отписка</span>
+                </a>
+            </div>
+        </main>
+    </div>
+</footer>
+<div class="dialogbox dialogbox-pending">
+    <div class="dialogbox__inner">
+        <div class="dialogbox__window">
+            <h2>Оформление вашей заявки</h2>
+            <!-- <div class="progress-pie-chart" data-percent="60">
+                <div class="ppc-progress">
+                    <div class="ppc-progress-fill"></div>
+                </div>
+                <div class="ppc-percents">
+                    <div class="pcc-percents-wrapper">
+                        <span>%</span>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="progress-pie-chart done" data-percent="100">
+                <div class="ppc-progress">
+                    <div class="ppc-progress-fill"></div>
+                </div>
+                <div class="ppc-percents">
+                    <div class="pcc-percents-wrapper">
+                        <img src="img/svgicons/done-green.svg" alt="">
+                        <p>Успешно!</p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="progress-pie-chart reject" data-percent="100">
+                <div class="ppc-progress">
+                    <div class="ppc-progress-fill"></div>
+                </div>
+                <div class="ppc-percents">
+                    <div class="pcc-percents-wrapper">
+                        <img src="img/svgicons/reject-big.svg" alt="">
+                        <p>Отклонено!</p>
+                    </div>
+                </div>
+            </div>
+            <h3>Обработка данных</h3>
+            <ul>
+                <li>
+                    <img src="img/svgicons/done-purple.svg" alt="">
+                    Проверка паспортных данных
+                </li>
+                <li>
+                    <img src="img/svgicons/done-purple.svg" alt="">
+                    Проверка по ФССП
+                </li>
+                <li>
+                    <img src="img/svgicons/reject-small.svg" alt="">
+                    Проверка кредитной истории
+                </li>
+            </ul>
+            <div class="dialogbox__close"></div>
+        </div>
+    </div>
+</div>
+<div class="dialogbox dialogbox-create">
+    <div class="dialogbox__inner">
+        <div class="dialogbox__window">
+            <h2>Оформление вашей заявки</h2>
+            <header class="create__header grey">
+                <div class="create__item">
+                    <p>Сумма</p>
+                    <p class="purple">₽28 000</p>
+                    <p class="grey"></p>
+                </div>
+                <div class="create__item">
+                    <p>Срок</p>
+                    <p class="purple">23 дня</p>
+                    <p class="grey">без процентов</p>
+                </div>
+                <div class="create__item">
+                    <p>Итого</p>
+                    <p class="purple">₽28 000</p>
+                    <p class="grey">
+                        <s>30 800 руб.</s>
+                    </p>
+                </div>
+            </header>
+            <form action="#">
+                <label class="create__input">
+                    <p>Фамилия</p>
+                    <input type="text" name="lastname" required>
+                </label>
+                <label class="create__input">
+                    <p>Имя</p>
+                    <input type="text" name="name" required>
+                </label>
+                <label class="create__input">
+                    <p>Отчество</p>
+                    <input type="text" name="patronymic" required>
+                </label>
+                <label class="create__input">
+                    <p>Дата рождения</p>
+                    <input type="date" required>
+                </label>
+                <label class="create__input">
+                    <p>Серия паспорта</p>
+                    <input type="text" required>
+                </label>
+                <label class="create__input">
+                    <p>Номер паспорта</p>
+                    <input type="text" required>
+                </label>
+                <label class="create__input">
+                    <p>Телефон</p>
+                    <input type="text" name="phone" required>
+                </label>
+                <label class="create__input">
+                    <p>Электронная почта</p>
+                    <input type="email" name="email" required>
+                </label>
+                <button type="submit" class="btn btn-red btn__fill" disabled>
+                    <span>Продолжить</span>
+                </button>
+            </form>
+            <footer class="create__lock">
+                <img src="img/svgicons/lock.svg" alt="">
+                <p>
+                    Ваши данные защищены.
+                    <br>
+                    Используется безопасное соединение
+                </p>
+            </footer>
+            <div class="dialogbox__close"></div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </body>
+</html>
